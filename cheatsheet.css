@@ -1,0 +1,82 @@
+/* CSS declarations go here */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    margin: 50px 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#outer {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.player {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.colheaders {
+    font-size: 1.50em;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.name {
+    display: inline-block;
+    width: 300px;
+}
+
+.player .name {
+    font-size: 1.75em;
+}
+
+.overall_pos {
+    display: inline-block;
+    width: 100px;
+}
+
+.player .overall_pos {
+    font-size: 2em;
+    font-weight: bold;
+    color: #777;
+}
+
+.team {
+  display: inline-block;
+  width: 100px;
+}
+
+.player .team {
+  font-size: 1.75em;
+}
+
+.position {
+    display: inline-block;
+    width: 100px;
+}
+
+.player .position {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.adp {
+    display: inline-block;
+    width: 100px;
+}
+
+.player .adp {
+  font-size: 1.50em;
+}
+
+.player.selected {
+  background-color: yellow;
+}

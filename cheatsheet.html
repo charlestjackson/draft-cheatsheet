@@ -1,0 +1,36 @@
+<head>
+  <title>cheatsheet</title>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="outer">
+    {{> cheatsheet}}
+  </div>
+</body>
+
+<template name="cheatsheet">
+  <div class="cheatsheet">
+    <div class="colheaders">
+      <span class="overall_pos colheader">Overall</span>
+      <span class="name colheader">Name</span>
+      <span class="team colheader">Team</span>
+      <span class="position colheader">Position</span>
+      <span class="adp colheader">ADP</span>
+    </div>
+    {{#each players}}
+      {{> player}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="player">
+  <div class="player {{selected}}">
+    <span class="overall_pos">{{overall_pos}}</span>
+    <span class="name">{{name}}</span>
+    <span class="team">{{team}}</span>
+    <span class="position">{{position}}</span>
+    <span class="adp">{{adp}}</span>
+  </div>
+</template>
