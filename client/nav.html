@@ -1,0 +1,11 @@
+<template name="nav">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				{{#each all_pages}}
+					<li class="{{selected_page}}"><a href="/{{this}}">{{this}}</a></li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</template>

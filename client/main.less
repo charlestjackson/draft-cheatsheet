@@ -1,16 +1,8 @@
-/* CSS declarations go here */
-
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    margin: 50px 0;
-    padding: 0;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
+@blue: #049cdb;
+@red: #9d261d;
+@orange: #f89406;
+@yellow: #ffc40d;
+@green: #46a546;
 
 #outer {
     width: 900px;
@@ -20,13 +12,13 @@ body {
 .player {
     cursor: pointer;
     padding: 5px;
+	border: 1px solid black;
 }
 
 .colheaders {
     font-size: 1.50em;
     font-weight: bold;
     border-bottom: 1px solid black;
-    margin-bottom: 5px;
 }
 
 .name {
@@ -46,7 +38,6 @@ body {
 .player .overall_pos {
     font-size: 2em;
     font-weight: bold;
-    color: #777;
 }
 
 .team {
@@ -78,5 +69,29 @@ body {
 }
 
 .player.selected {
-  background-color: yellow;
+  background-color: @yellow;
+}
+
+.player.qb {
+	background-color: @red;
+}
+
+.player.rb {
+	background-color: @green;
+}
+
+.player.wr {
+	background-color: @blue;
+}
+
+.player.te {
+	background-color: @orange;
+}
+
+.player.def {
+	background-color: olive;
+}
+
+.player.k {
+	background-color: aqua;
 }
