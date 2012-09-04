@@ -1,4 +1,3 @@
-
 Template.nav.selected_page = function() {
 	
 	if (Router.current_page() === this.toString()) {

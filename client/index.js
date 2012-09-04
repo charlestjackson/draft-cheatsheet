@@ -2,16 +2,11 @@
 var PageRouter = ReactiveRouter.extend( {
 	routes: {
 		'' : 'cheatsheet',
-		'cheatsheet' : 'cheatsheet',
-		'draft' : 'draft'
+		':page_id' : 'main'
 	},
 	
 	cheatsheet: function() {
 		this.goto("cheatsheet");
-	},
-	
-	draft: function() {
-		this.goto("draft");
 	},
 	
 	main: function(page_id) {
